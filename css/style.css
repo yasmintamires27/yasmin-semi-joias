@@ -1,0 +1,26 @@
+:root{
+    --primaryColor:#B76E79;
+    --secondaryColor: #5A3E36;
+    --tertiaryColor: #F4D9D6;
+    --mainColor: #EDEDED;
+    --textColor:#090909;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    color: var(--textColor);
+}
+
+
+ul, p{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: "Great Vibes", cursive;
+}
+
+h2{
+    font-family: "Great Vibes", cursive;
+}
