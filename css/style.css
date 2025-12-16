@@ -3,11 +3,15 @@
     --secondaryColor: #5A3E36;
     --tertiaryColor: #F4D9D6;
     --mainColor: #EDEDED;
-    --textColor:#090909;
+    --textColor:#222121;
+}
+
+html{
+    overflow-x: hidden;
 }
 
 body{
-    font-family: "Open Sans", sans-serif;
+    font-family:"Lato", sans-serif;
     color: var(--textColor);
 }
 
@@ -21,6 +25,3 @@ h1{
     font-family: "Great Vibes", cursive;
 }
 
-h2{
-    font-family: "Great Vibes", cursive;
-}
