@@ -1,23 +1,166 @@
-.section-welcome{
+/* Top Bar */
+.section-welcome {
+    background-color: var(--softPink);
+    color: var(--primaryColor);
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 8px;
-    font-size: 10px;
-    background-color: var(--primaryColor);
+    padding: 12px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
-.navbar{
+
+/* Navbar */
+.navbar {
+    padding: 40px 0;
+    background: var(--white);
+}
+
+.navbar-img {
+    width: 120px;
+}
+
+.navbarList {
     display: flex;
-    padding: 32px;
+    gap: 35px;
 }
-.navbar-img{
-    width: 80px;
-    height: 40px;
-}
-.navbarList{
-    display: flex;
-}
-.navbar-item{
-    text-decoration: none;
+
+.navbar-item {
     color: var(--textColor);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.navbar-item:hover, .navbar-item.active {
+    color: var(--primaryColor);
+}
+
+/* --- SEÇÃO COMO COMPRAR (FLUIDA) --- */
+.how-buy {
+    padding: 140px 0; /* Padding maior para elegância */
+    background-color: var(--white);
+}
+
+.buy-title {
+    font-size: 60px;
+    color: var(--primaryColor);
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.steps-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.step-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 300px;
+    border: 1px solid var(--primaryColor);
+    border-radius: 8px;
+}
+
+
+.step-content {
+    background: var(--white);
+    padding: 50px 30px;
+    border-radius: 30px;
+    border: 1px solid var(--softPink);
+    text-align: center;
+    z-index: 2;
+    transition: 0.4s;
+    box-shadow: 0 15px 35px rgba(183, 110, 121, 0.08); /* Sombra leve e fluida */
+}
+
+
+.step-icon {
+    font-size: 35px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.step-content h2 {
+    font-size: 22px;
+    color: var(--primaryColor);
+    margin-bottom: 15px;
+}
+
+.step-content p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--textColor);
+}
+
+/* Conector Fluido */
+.step-connector {
+    flex: 0.3;
+    height: 2px;
+    background: linear-gradient(90deg, var(--softPink), var(--primaryColor), var(--softPink));
+    margin-bottom: 30px; /* Alinha com o centro dos cards */
+    opacity: 0.6;
+}
+
+/* --- FOOTER --- */
+.footer {
+    background-color: var(--primaryColor);
+    color: var(--white);
+    padding: 100px 0 40px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.footer-logo {
+    width: 110px;
+    filter: brightness(0) invert(1); /* Deixa a logo branca se necessário */
+    margin-bottom: 25px;
+}
+
+.footer h4 {
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer a, .footer p {
+    color: var(--white);
+    font-size: 14px;
+    margin-bottom: 12px;
+    display: block;
+    opacity: 0.9;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+    .steps-wrapper {
+        flex-direction: column;
+        gap: 80px;
+    }
+    .step-connector {
+        display: none;
+    }
+    .how-buy { padding: 80px 0; }
 }

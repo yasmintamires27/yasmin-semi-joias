@@ -1,26 +1,38 @@
-:root{
-    --primaryColor:#B76E79;
-    --secondaryColor: #5A3E36;
-    --tertiaryColor: #F4D9D6;
-    --mainColor: #EDEDED;
-    --textColor:#090909;
+:root {
+    --primaryColor: #B76E79;    /* Rosa Protagonista */
+    --softPink: #FDF1F2;       /* Fundo Suave */
+    --secondaryColor: #5A3E36;  /* Marrom Sofisticado */
+    --textColor: #4A4A4A;
+    --white: #FFFFFF;
+    --bgColor: #FCFCFC;
 }
 
-body{
-    font-family: "Open Sans", sans-serif;
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bgColor);
     color: var(--textColor);
-}
-
-
-ul, p{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
-h1{
-    font-family: "Great Vibes", cursive;
+h1 {
+    font-family: 'Great Vibes', cursive;
 }
 
-h2{
-    font-family: "Great Vibes", cursive;
+h2, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+p{
+    margin: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
