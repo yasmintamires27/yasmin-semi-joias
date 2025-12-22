@@ -1,15 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/catalogo.css">
     <title>Yasmin Semi-jóias</title>
 </head>
+
 <body>
-    <h1>Eu sou a página de catálogo</h1>
-    
+    <div class="section-welcome">
+        <p>Olá, seja bem vinda ✨</p>
+        <p>Atendimento: (31) 99632-2598</p>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-navbar">
+            <a href="#" class="mb-3"><img class="navbar-img" src="./assets/logo.png" alt="logo-yasmin"></a>
+            <ul class="navbarList">
+                <li><a class="navbar-item active" href="#">Home</a></li>
+                <li><a class="navbar-item" href="#">Como comprar?</a></li>
+                <li><a class="navbar-item" href="./catalogo.html">Catálogo</a></li>
+                <li><a class="navbar-item" href="#">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container-catalogo">
+        <h1 class="catalogo-title">Catálogo de Semi-jóias</h1>
+        <div class="catalogo" id="catalogo"></div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class=" text-center text-md-start">
+                    <img src="./assets/logo.png" alt="Yasmin" class="footer-logo">
+                    <p>Delicadeza que acompanha você em todos os momentos.</p>
+                </div>
+                <div class="footer-box text-center">
+                    <h4>Institucional</h4>
+                    <a href="#">Home</a>
+                    <a href="#">Como comprar</a>
+                    <a href="./catalogo.html">Catálogo</a>
+                </div>
+                <div class="footer-box text-center text-md-end">
+                    <h4>Atendimento</h4>
+                    <p><strong>(31) 99632-2598</strong></p>
+                    <p>Seg a Sex • 9h às 18h</p>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <span>© 2025 Yasmin Semi-jóias — Feito com carinho 🤍</span>
+            </div>
+        </div>
+    </footer>
+    <script src="./produtos.js"></script>
 </body>
+
 </html>
