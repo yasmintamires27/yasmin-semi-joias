@@ -13,10 +13,18 @@
 
 /* Navbar */
 .navbar {
-    padding: 40px 0;
-    background: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0;
 }
 
+.container-navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
 .navbar-img {
     width: 120px;
 }
@@ -40,7 +48,7 @@
 
 /* --- SEÇÃO COMO COMPRAR (FLUIDA) --- */
 .how-buy {
-    padding: 140px 0; /* Padding maior para elegância */
+    padding: 140px 0; 
     background-color: var(--white);
 }
 
@@ -80,7 +88,7 @@
     text-align: center;
     z-index: 2;
     transition: 0.4s;
-    box-shadow: 0 15px 35px rgba(183, 110, 121, 0.08); /* Sombra leve e fluida */
+    box-shadow: 0 15px 35px rgba(183, 110, 121, 0.08);
 }
 
 
@@ -107,7 +115,7 @@
     flex: 0.3;
     height: 2px;
     background: linear-gradient(90deg, var(--softPink), var(--primaryColor), var(--softPink));
-    margin-bottom: 30px; /* Alinha com o centro dos cards */
+    margin-bottom: 30px; 
     opacity: 0.6;
 }
 
@@ -124,7 +132,11 @@
     gap: 60px;
     margin-bottom: 80px;
 }
-
+.footer-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .footer-logo {
     width: 110px;
     filter: brightness(0) invert(1); /* Deixa a logo branca se necessário */
@@ -151,7 +163,9 @@
     border-top: 1px solid rgba(255,255,255,0.15);
     font-size: 12px;
     letter-spacing: 1px;
+    text-align: center;
 }
+
 
 /* Responsividade */
 @media (max-width: 991px) {
