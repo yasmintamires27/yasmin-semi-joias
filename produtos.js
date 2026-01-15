@@ -250,7 +250,7 @@ function exibirObjetos(listaItens) {
 function iniciarConversa(nomeProduto) {
     const mensagem = `Olá! Tenho interesse no produto: ${nomeProduto}`;
     const url = `https://wa.me/5531996322598?text=${encodeURIComponent(mensagem)}`;
-    window.location.href = url;
+    window.open(url, "_blank");
 }
 
 exibirObjetos(semiJoias)
