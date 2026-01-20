@@ -13,18 +13,19 @@
 
 /* Navbar */
 .navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 24px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
 }
 
 .container-navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
 }
+
 .navbar-img {
     width: 120px;
 }
@@ -32,6 +33,12 @@
 .navbarList {
     display: flex;
     gap: 35px;
+}
+.navbarList a{
+    transition: 0.3s ease-in-out;
+}
+.navbarList a:hover {
+    transform: scale(1.1);
 }
 
 .navbar-item {
@@ -42,13 +49,14 @@
     font-weight: 500;
 }
 
-.navbar-item:hover, .navbar-item.active {
+.navbar-item:hover,
+.navbar-item.active {
     color: var(--primaryColor);
 }
 
 /* --- SEÇÃO COMO COMPRAR (FLUIDA) --- */
 .how-buy {
-    padding: 140px 0; 
+    padding: 140px 0;
     background-color: var(--white);
 }
 
@@ -115,7 +123,7 @@
     flex: 0.3;
     height: 2px;
     background: linear-gradient(90deg, var(--softPink), var(--primaryColor), var(--softPink));
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
     opacity: 0.6;
 }
 
@@ -132,14 +140,17 @@
     gap: 60px;
     margin-bottom: 80px;
 }
-.footer-box{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .footer-logo {
     width: 110px;
-    filter: brightness(0) invert(1); /* Deixa a logo branca se necessário */
+    filter: brightness(0) invert(1);
+    /* Deixa a logo branca se necessário */
     margin-bottom: 25px;
 }
 
@@ -150,7 +161,8 @@
     letter-spacing: 2px;
 }
 
-.footer a, .footer p {
+.footer a,
+.footer p {
     color: var(--white);
     font-size: 14px;
     margin-bottom: 12px;
@@ -160,7 +172,7 @@
 
 .footer-bottom {
     padding-top: 30px;
-    border-top: 1px solid rgba(255,255,255,0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
     font-size: 12px;
     letter-spacing: 1px;
     text-align: center;
@@ -173,8 +185,12 @@
         flex-direction: column;
         gap: 80px;
     }
+
     .step-connector {
         display: none;
     }
-    .how-buy { padding: 80px 0; }
+
+    .how-buy {
+        padding: 80px 0;
+    }
 }

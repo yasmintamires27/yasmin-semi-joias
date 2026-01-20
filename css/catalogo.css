@@ -28,6 +28,10 @@
     align-items: center;
     gap: 16px;
 }
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
 
 .img-card {
     width: 270px;
