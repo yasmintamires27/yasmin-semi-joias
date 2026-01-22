@@ -34,24 +34,20 @@
     display: flex;
     gap: 35px;
 }
-.navbarList a{
-    transition: 0.3s ease-in-out;
-}
-.navbarList a:hover {
-    transform: scale(1.1);
-}
 
 .navbar-item {
     color: var(--textColor);
-    font-size: 12px;
+    display: inline-block;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
+    transition: 0.3s ease-in-out;
 }
 
 .navbar-item:hover,
 .navbar-item.active {
     color: var(--primaryColor);
+    transform: scale(1.1);
 }
 
 /* --- SEÇÃO COMO COMPRAR (FLUIDA) --- */
@@ -147,6 +143,11 @@
     align-items: center;
 }
 
+/* frase de footer box */
+.box-phrase {
+    text-align: center;
+}
+
 .footer-logo {
     width: 110px;
     filter: brightness(0) invert(1);
@@ -156,13 +157,14 @@
 
 .footer h4 {
     font-size: 18px;
-    margin-bottom: 25px;
+    margin-bottom: 36px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-weight: 600;
+
 }
 
-.footer a,
-.footer p {
+.footer a {
     color: var(--white);
     font-size: 14px;
     margin-bottom: 12px;
@@ -180,7 +182,7 @@
 
 
 /* Responsividade */
-@media (max-width: 991px) {
+@media (max-width: 769px) {
     .steps-wrapper {
         flex-direction: column;
         gap: 80px;
@@ -192,5 +194,17 @@
 
     .how-buy {
         padding: 80px 0;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 551px) {
+    .footer-box img {
+        width: 150px;
     }
 }
