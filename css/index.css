@@ -207,4 +207,13 @@
     .footer-box img {
         width: 150px;
     }
+
+    .buy-title {
+        margin-bottom: 64px;
+    }
+
+    .section-welcome p {
+        font-size: 12px;
+        text-align: center;
+    }
 }

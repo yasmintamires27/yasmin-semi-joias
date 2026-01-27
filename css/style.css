@@ -1,7 +1,7 @@
 :root {
-    --primaryColor: #B76E79;    
-    --softPink: #FDF1F2;       
-    --secondaryColor: #5A3E36; 
+    --primaryColor: #B76E79;
+    --softPink: #FDF1F2;
+    --secondaryColor: #5A3E36;
     --textColor: #4A4A4A;
     --white: #FFFFFF;
     --bgColor: #FCFCFC;
@@ -20,7 +20,8 @@ h1 {
     font-family: 'Great Vibes', cursive;
 }
 
-h2, h4 {
+h2,
+h4 {
     font-family: 'Playfair Display', serif;
 }
 
@@ -28,20 +29,27 @@ a {
     text-decoration: none;
     transition: all 0.3s ease;
 }
-p{
+
+p {
     margin: 0;
 }
+
 ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
+
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
-@media (max-width: 768px) {
-
+@media (max-width: 551px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
