@@ -1,6 +1,8 @@
 # Yasmin Semi-Jóias
 
-Descrição do projeto:  
+Descrição do projeto: Landing Page criada para divulgar meu trabalho com semijoias. O principal objetivo desse projeto foi colocar em prática boas práticas de HTML semântico, CSS modular, a metodologia BEM, além de conceitos voltados para design e usabilidade.
+
+Fui responsável por todo o processo de criação do site, desde a prototipação até a codificação, buscando unir técnica, organização de código e uma boa experiência visual.
 
 ## Tecnologias Utilizadas: Frontend
 
@@ -20,7 +22,7 @@ Descrição do projeto:
 Acesse a demonstração do projeto online:  
 https://yasmin-semi-joias.vercel.app/
 
-<img width="1335" height="652" alt="Image" src="" />
+<img width="1035" height="637" alt="print" src="https://github.com/user-attachments/assets/c40ae092-9a07-4a21-8bff-f34ca6f8c8ff" />" />
 
 
 
